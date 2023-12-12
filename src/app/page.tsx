@@ -1,31 +1,29 @@
 
 import Header from "./components/Header";
+import Searchbar from "./components/Searchbar";
 import Playlists from "./components/Playlists";
-import Bottom from "./components/Bottom";
-import Search from "./components/Search";
-import Library from "./components/Library";
-import Journal from "./journal/page";
-import Searchbar from "./searchbar/page"
+import Journal from "./components/Journal";
+import Link from "next/link";
 
 
 export default function Home() {
   return (
-    <main>
-      <div className="h-screen w-screen flex bg-black">
-        
-<div className="w-1/4">
-<Search></Search>
-    <Library></Library>
-    <Bottom></Bottom>
-</div>
-<div className="w-[73%]">
-<Header></Header>
-{/* <Searchbar></Searchbar> */}
-<Playlists></Playlists>
-{/* <Journal></Journal> */}
-</div>
+    <>
+    {/* <Link href="/">
+    <Header></Header>
+    <Playlists></Playlists>
+    </Link>
+    
 
-        </div>
-    </main>
+<Link href="/journal">
+<Searchbar></Searchbar>
+<Journal></Journal>
+</Link> */}
+<Header></Header>
+<Playlists></Playlists>
+
+
+
+</>
   )
 }
