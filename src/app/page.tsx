@@ -19,10 +19,10 @@ export default function Home() {
     <Bottom></Bottom>
 </div>
 <div className="w-[73%]">
-{/* <Header></Header> */}
-<Searchbar></Searchbar>
-{/* <Playlists></Playlists> */}
-<Journal></Journal>
+<Header></Header>
+{/* <Searchbar></Searchbar> */}
+<Playlists></Playlists>
+{/* <Journal></Journal> */}
 </div>
 
         </div>
